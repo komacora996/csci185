@@ -1,0 +1,22 @@
+img {
+    width: 200px;
+}
+
+nav {
+        border: dotted 10px teal;
+}
+
+header,
+footer {
+    background-color: gainsboro;
+}
+
+section {
+    width: 400px;
+    display: inline-block;
+    border-style: solid;
+}
+
+#section2 {
+    background-color: hotpink;
+}
