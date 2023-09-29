@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* create additional rules below:  */
+
+#home {
+    background-color: rgb(255, 181, 205);
+    align-items: center;
+}
+#bio {
+    background-color: rgb(255, 158, 211);
+}
+#portfolio{
+    background-color: rgb(252, 131, 195);
+}
+#contact{
+    background-color: deeppink;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
