@@ -1,13 +1,67 @@
+@font-face {
+    font-family: "Sriracha";
+    src: url("homepage_images/Sriracha/Sriracha-Regular.ttf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSymbols";
+    src: url("homepage_images/Noto_Sans_Symbols_2/NotoSansSymbols2-Regular.ttf") format('opentype');
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: Sriracha, sans-serif;
+    background-color: rgb(249, 238, 255);
+}
+
+.icons {
+    font-family: NotoSymbols;
+    font-size: 50px;
 }
 
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+    padding-top: 10px;
+}
+
+header {
+    background-image: url(homepage_images/banner.jpg);
+    background-size: 500px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section {
+    text-align: center;
+    margin: 50px;
+}
+
+#tutorials {
+    border: solid 10px #86e8c7;
+    border-style: dashed;
+    border-width: 15px;
+}
+
+
+#homework {
+    border: solid 10px #86e8c7;
+    border-style: dashed;
+    border-width: 15px;
+}
+
+#inspiration {
+    border: solid 10px #86e8c7;
+    border-style: dashed;
+    border-width: 15px;
+}
+
+#class-exercises {
+    border: solid 10px #86e8c7;
+    border-style: dashed;
+    border-width: 15px;
 }
