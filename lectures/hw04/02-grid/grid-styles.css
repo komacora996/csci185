@@ -6,7 +6,56 @@ body {
 
 .grid-container {
     height: 100vh;
-    /* you will add addition rules for the container here  */
+    border: solid 5px black;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 /* create your child rules here:  */
+
+.item-1 {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: beige;
+    border: solid 5px black;
+    text-align: center;
+}
+
+.item-2 {
+    display: grid;
+    grid-column: 3/6;
+    grid-row: 2;
+    background-color: beige;
+    border: solid 5px black;
+    text-align: center;
+
+}
+
+.item-3 {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: beige;
+    border: solid 5px black;
+    text-align: center;
+}
+
+.item-4 {
+    display: grid;
+    grid-column: 3/6;
+    grid-row: 4;
+    background-color: beige;
+    border: solid 5px black;
+    text-align: center;
+}
+
+.item-5 {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 5;
+    background-color: beige;
+    border: solid 5px black;
+    text-align: center;
+}
