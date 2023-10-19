@@ -81,8 +81,11 @@ footer {
 /***************************/
 /* Part A: Left Navigation */
 /***************************/
-
-/* Your Code Here */
+i {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
 
 
@@ -94,36 +97,97 @@ footer {
 /********************************/
 
 /* Your Code Here */
+header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px;
+}
+
 #upgrade {
     border:solid 1px white;
     border-radius: 120px;
-    padding: 10px;
-    padding-left: ;
-    padding-right: ;
-    padding-top: ;
-    padding-bottom: ;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform: uppercase;
+}
+#profile {
+    background-color: #444;
+    border-radius: 120px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform: uppercase;
 }
 
+nav {
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+}
 
-
-
+nav > a {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: solid 4px transparent;
+}
+nav > a:hover,
+nav > a.selected {
+   border-bottom: solid 4px rgb(0, 255, 0);
+}
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
 /* Your Code Here */
 
-.artist-card img{
-    
+#featured-content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:25px;
+}
+.artist-card{
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5%;
+}
+ .artist-card img {
+    width: 100%;
+    border-radius: 50%;
+
+ }
+h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
 }
 
+.artist-card p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: lighter;
+    color: #dbdbdb;
+}
+
+.artist-card button{
+    display: none;
+}
 
 
 /*****************/
 /* Mobile Design */
 /*****************/
-@media screen and (max-width: 1000px) {}
-
-
-
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 1000px){
+    article{
+        display: flex;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+    }
+}
+@media screen and (max-width: 700px) {
+    aside{display: none;}
+}
