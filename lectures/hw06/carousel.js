@@ -17,10 +17,12 @@ let idx = 0;
     (1) display the new image inside of the .current-photo container, and 
     (2) update the caption inside of the .caption paragraph
 */
-function showImage() {
+function showImage(){
     console.log('Show image');
     const img = document.querySelector(".current-photo img");
-    img.src = photos [idx];
+    img.src = photos[idx];
+    const caption = document.querySelector(".caption");
+    caption.innerHTML= `Image ${idx+1} of ${photos.length}`;
 }
 
 
@@ -32,8 +34,13 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-    idx +=1;
     showImage();
+        if(idx >=9){
+            idx=0;
+        }
+        else {
+            idx +=1; 
+        }
 }
 
 
@@ -45,6 +52,10 @@ function forward() {
 */
 function back() {
     console.log('back');
-    idx -=1;
     showImage();
+        if(idx <=0){
+            idx=9;
+    } else {
+        idx -=1;
+    }
 }
