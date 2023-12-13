@@ -13,10 +13,6 @@
 background-image: url();
 }
 
-body {
-    cursor: ('/final_project/images/mousecursor.png'), auto;
-}
-
 .wrapper {
     background: lightcyan;
     height: 100vh;
@@ -24,6 +20,14 @@ body {
     align-items: center;
     justify-content: center;
     margin:0vh;
+
+    cursor: url(''), auto;
+}
+
+* .links li a{
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 p{
@@ -37,11 +41,23 @@ section .loader {
     width: 120px;
     height: 120px;
 }
+nav {
+    background-color: rgb(255, 232, 140);
+}
 
 nav a::after{
     transition: all 500ms;
 }
 nav a:hover{
+    background-color: #56a5ff;
+    color: white;
+    border-radius: 3px;
+}
+
+li a::after{
+    transition: all 500ms;
+}
+li a:hover{
     background-color: #56a5ff;
     color: white;
     border-radius: 3px;
@@ -75,11 +91,6 @@ header {
 section {
     text-align: center;
     margin: 50px;
-}
-
-@keyframes PARTICLES {
-    0% { background-position: -485px 487px, 485px 487px;}
-    100% { background-position: 0 0, 0 0;   }
 }
 
 @media (max-width: 1020px) {
@@ -128,22 +139,4 @@ section {
     grid-column: 1;
     grid-row: 6;
 }
-}
-
-body:after 
-{
-    z-index: -3 !important;
-    filter: hue-rotate(0deg);
-
-    position: fixed;
-    display: block;
-    content: '';
-    left: 0;
-    bottom: 0;
-    margin-left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://i.imgur.com/zhBAjPa.png), url(https://i.imgur.com/sH5Xot3.png);
-    animation: PARTICLES 15s linear infinite;
-    pointer-events: none !important;
 }
